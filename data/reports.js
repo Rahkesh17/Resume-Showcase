@@ -21,7 +21,7 @@ window.powerBiReports = [
       "Power BI real estate dashboard focused on property data exploration, market comparison, and visual analysis.",
     tools: ["Power BI", "DAX", "Real Estate Analytics"],
     insights: [
-      "How do property features such as type, number of rooms, and location influence real estate prices in the Melbourne market?",
+      "How do property features such as type, number of rooms and location influence real estate prices in the Melbourne market?",
       "Which products and sales methods are most profitable and efficient?",
       "How do Adidas US sales trends shift across seasons and months?"
     ],
