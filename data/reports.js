@@ -6,9 +6,9 @@ window.powerBiReports = [
       "Power BI sales dashboard analyzing Adidas US sales performance, business trends, and key commercial metrics.",
     tools: ["Power BI", "Sales Analytics", "Dashboard Design"],
     insights: [
-      "Analyzed sales performance across business dimensions.",
-      "Designed KPI-focused visuals for quick business review.",
-      "Created an exportable dashboard suitable for public portfolio viewing."
+      "Which retailers and regions deliver the strongest Adidas US sales performance?",
+      "Which products and sales methods are most profitable and efficient?",
+      "How do Adidas US sales trends shift across seasons and months?"
     ],
     pdfUrl: "reports/adidas-us-sales-visualization.pdf",
     liveUrl:
@@ -21,9 +21,9 @@ window.powerBiReports = [
       "Power BI real estate dashboard focused on property data exploration, market comparison, and visual analysis.",
     tools: ["Power BI", "DAX", "Real Estate Analytics"],
     insights: [
-      "Created visual summaries for real estate performance analysis.",
-      "Used dashboard pages to compare market and property-level patterns.",
-      "Designed visuals to support faster interpretation of property data."
+      "How do property features such as type, number of rooms, and location influence real estate prices in the Melbourne market?",
+      "Which products and sales methods are most profitable and efficient?",
+      "How do Adidas US sales trends shift across seasons and months?"
     ],
     pdfUrl: "reports/real-estate-visualization.pdf",
     liveUrl:
