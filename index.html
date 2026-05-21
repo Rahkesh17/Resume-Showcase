@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Power BI Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website showcasing published Power BI reports."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#top">Power BI Portfolio</a>
+        <div class="nav-links">
+          <a href="#reports">Reports</a>
+          <a href="#live-reports">Live Reports</a>
+          <a href="#skills">Skills</a>
+        </div>
+      </nav>
+
+      <section id="top" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Data Analytics Portfolio</p>
+          <h1>Power BI reports that turn business data into clear decisions.</h1>
+          <p>
+            A portfolio of three published Power BI dashboards with live report links,
+            interactive previews, and short case-study summaries for resume reviewers.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#live-reports">View Live Reports</a>
+            <a class="button secondary" href="#reports">Project Summaries</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Portfolio highlights">
+          <div>
+            <span class="metric" id="report-count">0</span>
+            <span class="metric-label">Reports</span>
+          </div>
+          <div>
+            <span class="metric">DAX</span>
+            <span class="metric-label">Measures</span>
+          </div>
+          <div>
+            <span class="metric">ETL</span>
+            <span class="metric-label">Power Query</span>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="reports" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Power BI Reports</h2>
+        </div>
+        <div id="reports-grid" class="reports-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="live-reports" class="section live-report-section">
+        <div class="section-heading">
+          <p class="eyebrow">Published Power BI</p>
+          <h2>Live Interactive Reports</h2>
+          <p>
+            Each report is published through Power BI Service. If a preview asks for
+            sign-in or does not load inside GitHub Pages, use the direct button to
+            open the report.
+          </p>
+        </div>
+
+        <div id="live-reports-grid" class="live-reports-grid"></div>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h2>Skills Demonstrated</h2>
+        </div>
+        <div class="skills-grid">
+          <article>
+            <h3>Data Modeling</h3>
+            <p>Relationships, calculated fields, measures, and structured reporting models.</p>
+          </article>
+          <article>
+            <h3>DAX</h3>
+            <p>KPIs, dynamic measures, time intelligence, and business calculations.</p>
+          </article>
+          <article>
+            <h3>Power Query</h3>
+            <p>Data cleaning, transformation, merging, and repeatable preparation steps.</p>
+          </article>
+          <article>
+            <h3>Dashboard Design</h3>
+            <p>Interactive visuals, slicers, report pages, and decision-focused layouts.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Created by Your Name. Add your LinkedIn, GitHub, and email here.</p>
+    </footer>
+
+    <script src="data/reports.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
