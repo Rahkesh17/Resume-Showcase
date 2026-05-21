@@ -1,6 +1,6 @@
 const reports = window.powerBiReports || [];
 const reportsGrid = document.querySelector("#reports-grid");
-const accessGrid = document.querySelector("#access-grid");
+const liveReportsGrid = document.querySelector("#live-reports-grid");
 const reportCount = document.querySelector("#report-count");
 
 function createLink(href, label, className = "") {
@@ -36,15 +36,26 @@ function renderReports() {
     .join("");
 }
 
-function renderAccessLinks() {
-  accessGrid.innerHTML = reports
+function renderLiveReports() {
+  liveReportsGrid.innerHTML = reports
     .map((report, index) => {
       return `
-        <article class="access-card" id="${report.id}">
-          <p class="eyebrow">Report ${index + 1}</p>
-          <h3>${report.title}</h3>
-          <p>${report.summary}</p>
-          ${createLink(report.liveUrl, "Open in Power BI", "button primary")}
+        <article class="live-report-card" id="${report.id}">
+          <div class="live-report-header">
+            <div>
+              <p class="eyebrow">Report ${index + 1}</p>
+              <h3>${report.title}</h3>
+            </div>
+            ${createLink(report.liveUrl, "Open in Power BI", "button secondary")}
+          </div>
+          <div class="embed-shell">
+            <iframe
+              title="${report.title}"
+              src="${report.liveUrl}"
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
+          </div>
         </article>
       `;
     })
@@ -52,4 +63,4 @@ function renderAccessLinks() {
 }
 
 renderReports();
-renderAccessLinks();
+renderLiveReports();

@@ -1,10 +1,10 @@
 # Power BI Portfolio
 
-A simple GitHub Pages portfolio for showcasing three secure Power BI report links.
+A simple GitHub Pages portfolio for showcasing three Power BI reports.
 
-## Why There Are No Embedded Previews
+## Embedded Report Panels
 
-The Power BI tenant currently does not allow `Publish to web` embed code creation. Because of that, the normal share links should be opened directly in Power BI instead of embedded in an iframe. This avoids broken gray preview boxes on the portfolio page.
+The page includes embedded Power BI panels and direct "Open in Power BI" buttons. If Power BI shows "This content isn't available" inside a panel, the report link is blocked from public iframe display by Power BI settings. The direct button is still included as a fallback.
 
 ## Live Reports
 
@@ -16,7 +16,7 @@ The Power BI tenant currently does not allow `Publish to web` embed code creatio
 
 - `index.html` - main portfolio page
 - `styles.css` - responsive page styling
-- `script.js` - renders report cards and access buttons
+- `script.js` - renders report cards and embedded report panels
 - `data/reports.js` - report titles, summaries, skills, insights, and Power BI URLs
 
 ## Customize
