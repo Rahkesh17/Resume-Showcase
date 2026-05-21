@@ -1,24 +1,25 @@
 # Power BI Portfolio
 
-A simple GitHub Pages portfolio for showcasing three Power BI reports.
+A GitHub Pages portfolio for showcasing Power BI dashboards using PDF exports and direct Power BI links.
 
-## Embedded Report Panels
+## Included Dashboards
 
-The page includes embedded Power BI panels and direct "Open in Power BI" buttons. If Power BI shows "This content isn't available" inside a panel, the report link is blocked from public iframe display by Power BI settings. The direct button is still included as a fallback.
-
-## Live Reports
-
-- [Power BI Report 1](https://app.powerbi.com/links/FeIlIMDhsh?ctid=5c7d0b28-bdf8-410c-aa93-4df372b16203&pbi_source=linkShare)
-- [Power BI Report 2](https://app.powerbi.com/links/6P-tdyq5h7?ctid=5c7d0b28-bdf8-410c-aa93-4df372b16203&pbi_source=linkShare)
-- [Power BI Report 3](https://app.powerbi.com/links/0dFmSWFxxA?ctid=5c7d0b28-bdf8-410c-aa93-4df372b16203&pbi_source=linkShare)
+- FYP Dashboard
+- PowerBI Real Estate Visualization
+- PowerBI Adidas US Sales Visualization
 
 ## Files
 
 - `index.html` - main portfolio page
 - `styles.css` - responsive page styling
-- `script.js` - renders report cards and embedded report panels
-- `data/reports.js` - report titles, summaries, skills, insights, and Power BI URLs
+- `script.js` - renders report cards and PDF dashboard previews
+- `data/reports.js` - report titles, summaries, skills, insights, PDF paths, and Power BI URLs
+- `reports/` - PDF exports used by the portfolio
+
+## Why PDF Showcase
+
+Power BI public iframe embedding is blocked unless the tenant admin enables `Publish to web`. PDF exports let the dashboards be shown directly on GitHub Pages without relying on Power BI public embed settings.
 
 ## Customize
 
-Edit `data/reports.js` to update the report names, descriptions, skills, insights, and links. Edit the footer in `index.html` to add your name, LinkedIn, GitHub, and email.
+Edit `data/reports.js` to update report names, descriptions, skills, insights, PDF files, and Power BI links. Edit the footer in `index.html` to add your name, LinkedIn, GitHub, and email.

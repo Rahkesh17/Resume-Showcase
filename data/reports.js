@@ -1,43 +1,46 @@
 window.powerBiReports = [
   {
-    id: "report-1",
-    title: "Power BI Report 1",
+    id: "fyp-dashboard",
+    title: "FYP Dashboard",
     summary:
-      "Published Power BI dashboard with interactive visuals, filters, and business insights. Update this summary with the report topic and key decisions it supports.",
-    tools: ["Power BI", "DAX", "Power Query"],
+      "Capstone Power BI dashboard exploring the impact of digitalization on entrepreneurship using machine learning from a global perspective.",
+    tools: ["Power BI", "Machine Learning", "Data Visualization"],
     insights: [
-      "Built interactive report pages for stakeholder analysis.",
-      "Used Power BI visuals and slicers to support self-service exploration.",
-      "Prepared a public portfolio link for resume and GitHub showcase."
+      "Built a dashboard for capstone research presentation.",
+      "Analyzed entrepreneurship and digitalization indicators from a global perspective.",
+      "Presented findings through visual storytelling and interactive dashboard design."
     ],
+    pdfUrl: "reports/fyp-dashboard.pdf",
     liveUrl:
       "https://app.powerbi.com/links/FeIlIMDhsh?ctid=5c7d0b28-bdf8-410c-aa93-4df372b16203&pbi_source=linkShare"
   },
   {
-    id: "report-2",
-    title: "Power BI Report 2",
+    id: "real-estate-visualization",
+    title: "Real Estate Visualization",
     summary:
-      "Published Power BI dashboard with interactive report navigation and analytical views. Update this summary with the dataset, business problem, and results.",
-    tools: ["Power BI", "DAX", "Data Modeling"],
+      "Power BI real estate dashboard focused on property data exploration, market comparison, and visual analysis.",
+    tools: ["Power BI", "DAX", "Real Estate Analytics"],
     insights: [
-      "Created a structured dashboard experience for exploring trends.",
-      "Applied model relationships and measures for report-level insights.",
-      "Shared through Power BI Service for interactive browser access."
+      "Created visual summaries for real estate performance analysis.",
+      "Used dashboard pages to compare market and property-level patterns.",
+      "Designed visuals to support faster interpretation of property data."
     ],
+    pdfUrl: "reports/real-estate-visualization.pdf",
     liveUrl:
       "https://app.powerbi.com/links/6P-tdyq5h7?ctid=5c7d0b28-bdf8-410c-aa93-4df372b16203&pbi_source=linkShare"
   },
   {
-    id: "report-3",
-    title: "Power BI Report 3",
+    id: "adidas-us-sales-visualization",
+    title: "Adidas US Sales Visualization",
     summary:
-      "Published Power BI dashboard focused on interactive reporting, KPI review, and visual analytics. Update this summary with your report's exact topic.",
-    tools: ["Power BI", "Power Query", "Dashboard Design"],
+      "Power BI sales dashboard analyzing Adidas US sales performance, business trends, and key commercial metrics.",
+    tools: ["Power BI", "Sales Analytics", "Dashboard Design"],
     insights: [
-      "Designed visuals for quick KPI scanning and deeper exploration.",
-      "Used slicers and report pages to help users compare performance.",
-      "Published as a live Power BI report for portfolio review."
+      "Analyzed sales performance across business dimensions.",
+      "Designed KPI-focused visuals for quick business review.",
+      "Created an exportable dashboard suitable for public portfolio viewing."
     ],
+    pdfUrl: "reports/adidas-us-sales-visualization.pdf",
     liveUrl:
       "https://app.powerbi.com/links/0dFmSWFxxA?ctid=5c7d0b28-bdf8-410c-aa93-4df372b16203&pbi_source=linkShare"
   }

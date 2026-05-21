@@ -314,17 +314,17 @@ h3 {
   border-color: var(--accent);
 }
 
-.live-report-section,
+.pdf-showcase-section,
 .skills-section {
   padding-top: 24px;
 }
 
-.live-reports-grid {
+.pdf-showcase-grid {
   display: grid;
   gap: 28px;
 }
 
-.live-report-card {
+.pdf-showcase-card {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -332,7 +332,7 @@ h3 {
   overflow: hidden;
 }
 
-.live-report-header {
+.pdf-showcase-header {
   align-items: center;
   display: flex;
   gap: 18px;
@@ -340,23 +340,25 @@ h3 {
   padding: 18px;
 }
 
-.live-report-header h3,
-.live-report-header p {
+.pdf-showcase-header h3,
+.pdf-showcase-header p {
   margin-bottom: 0;
 }
 
-.embed-shell {
-  background: #ffffff;
-  border-top: 1px solid var(--line);
-  min-height: 620px;
-  overflow: hidden;
+.pdf-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
 }
 
-.embed-shell iframe {
-  border: 0;
+.pdf-frame {
+  background: #ffffff;
+  border-top: 1px solid var(--line);
   display: block;
   height: 620px;
   width: 100%;
+  border: 0;
 }
 
 .skills-grid article {
@@ -408,14 +410,16 @@ h3 {
     flex-wrap: wrap;
   }
 
-  .live-report-header {
+  .pdf-showcase-header {
     align-items: flex-start;
     flex-direction: column;
   }
 
-  .embed-shell,
-  .embed-shell iframe {
+  .pdf-actions {
+    justify-content: flex-start;
+  }
+
+  .pdf-frame {
     height: 520px;
-    min-height: 520px;
   }
 }

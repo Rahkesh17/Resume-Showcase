@@ -1,6 +1,6 @@
 const reports = window.powerBiReports || [];
 const reportsGrid = document.querySelector("#reports-grid");
-const liveReportsGrid = document.querySelector("#live-reports-grid");
+const pdfShowcaseGrid = document.querySelector("#pdf-showcase-grid");
 const reportCount = document.querySelector("#report-count");
 
 function createLink(href, label, className = "") {
@@ -16,7 +16,8 @@ function renderReports() {
     .map((report, index) => {
       const tags = report.tools.map((tool) => `<li>${tool}</li>`).join("");
       const insights = report.insights.map((insight) => `<li>${insight}</li>`).join("");
-      const liveLink = createLink(report.liveUrl, "Open Live Report");
+      const pdfLink = createLink(report.pdfUrl, "Open PDF");
+      const liveLink = createLink(report.liveUrl, "Open in Power BI");
 
       return `
         <article class="report-card">
@@ -28,7 +29,10 @@ function renderReports() {
             <h3>${report.title}</h3>
             <p>${report.summary}</p>
             <ul class="insights">${insights}</ul>
-            <div class="card-links">${liveLink}</div>
+            <div class="card-links">
+              ${pdfLink}
+              ${liveLink}
+            </div>
           </div>
         </article>
       `;
@@ -36,26 +40,27 @@ function renderReports() {
     .join("");
 }
 
-function renderLiveReports() {
-  liveReportsGrid.innerHTML = reports
+function renderPdfShowcase() {
+  pdfShowcaseGrid.innerHTML = reports
     .map((report, index) => {
       return `
-        <article class="live-report-card" id="${report.id}">
-          <div class="live-report-header">
+        <article class="pdf-showcase-card" id="${report.id}">
+          <div class="pdf-showcase-header">
             <div>
-              <p class="eyebrow">Report ${index + 1}</p>
+              <p class="eyebrow">Dashboard ${index + 1}</p>
               <h3>${report.title}</h3>
             </div>
-            ${createLink(report.liveUrl, "Open in Power BI", "button secondary")}
+            <div class="pdf-actions">
+              ${createLink(report.pdfUrl, "Open PDF", "button secondary")}
+              ${createLink(report.liveUrl, "Open in Power BI", "button secondary")}
+            </div>
           </div>
-          <div class="embed-shell">
-            <iframe
-              title="${report.title}"
-              src="${report.liveUrl}"
-              loading="lazy"
-              allowfullscreen
-            ></iframe>
-          </div>
+          <iframe
+            class="pdf-frame"
+            title="${report.title} PDF preview"
+            src="${report.pdfUrl}"
+            loading="lazy"
+          ></iframe>
         </article>
       `;
     })
@@ -63,4 +68,4 @@ function renderLiveReports() {
 }
 
 renderReports();
-renderLiveReports();
+renderPdfShowcase();
