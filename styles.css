@@ -319,6 +319,10 @@ h3 {
   padding-top: 24px;
 }
 
+.skills-section {
+  padding-bottom: 28px;
+}
+
 .pdf-showcase-grid {
   display: grid;
   gap: 28px;
