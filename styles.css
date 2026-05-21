@@ -44,7 +44,7 @@ a {
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1160px;
-  padding: 22px 24px;
+  padding: 14px 24px;
 }
 
 .brand {
@@ -66,14 +66,14 @@ a {
 }
 
 .hero {
-  align-items: center;
+  align-items: start;
   display: grid;
   gap: 48px;
   grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
   margin: 0 auto;
   max-width: 1160px;
   min-height: 420px;
-  padding: 36px 24px 64px;
+  padding: 8px 24px 64px;
 }
 
 .hero-copy {
@@ -403,7 +403,7 @@ h3 {
   .hero {
     gap: 28px;
     min-height: auto;
-    padding-top: 44px;
+    padding-top: 16px;
   }
 
   h1 {
