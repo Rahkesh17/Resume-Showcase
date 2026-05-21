@@ -314,45 +314,26 @@ h3 {
   border-color: var(--accent);
 }
 
-.live-report-section,
+.access-section,
 .skills-section {
   padding-top: 24px;
 }
 
-.live-reports-grid {
+.access-grid {
   display: grid;
-  gap: 28px;
-}
-
-.live-report-card {
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-
-.live-report-header {
-  align-items: center;
-  display: flex;
   gap: 18px;
-  justify-content: space-between;
-  padding: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.live-report-header h3,
-.live-report-header p {
-  margin-bottom: 0;
-}
-
-.embed-shell {
+.access-card {
   background: var(--surface);
-  border-top: 1px solid var(--line);
-  overflow: hidden;
-}
-
-.embed-shell iframe {
-  aspect-ratio: 16 / 9;
-  border: 0;
-  display: block;
-  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px;
 }
 
 .skills-grid article {
@@ -369,6 +350,7 @@ h3 {
 @media (max-width: 920px) {
   .hero,
   .reports-grid,
+  .access-grid,
   .skills-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -386,6 +368,7 @@ h3 {
 
   .hero,
   .reports-grid,
+  .access-grid,
   .skills-grid {
     grid-template-columns: 1fr;
   }
@@ -402,10 +385,5 @@ h3 {
 
   .nav-links {
     flex-wrap: wrap;
-  }
-
-  .live-report-header {
-    align-items: flex-start;
-    flex-direction: column;
   }
 }
